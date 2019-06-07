@@ -1,15 +1,8 @@
-# Analysis of Algorithms
+# A
 
-## Exercise I
+O(n)
 
-Give an analysis of the running time of each snippet of
-pseudocode with respect to the input size n of each of the following:
-
-```
-a)  a = 0
-    while (a < n * n * n):
-      a = a + n * n
-```
+This one is a bit tricky. I added a counter to the code and graphed it to be sure. This first line is O(1) and the loop looks like 0(n^3) at first blush but in the body of the loop we are incrementing a by n^2 so the while loop actually runs 0(n^3) / O(n^2) with is O(n).
 
 ```
 b)  sum = 0
